@@ -45,8 +45,7 @@ function bkoFormidableTag( $atts )
 	);
 	$a = shortcode_atts(
 		[
-			'formName' => 'contact',
-			'bar' => 'something else',
+			'formName' => $atts['formname'],
 		],
 	$atts );
 
