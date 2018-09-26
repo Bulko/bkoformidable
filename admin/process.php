@@ -105,7 +105,7 @@ function bkoFormidableSendMail( $data = [] )
 		{
 			$headers[] = 'Cc: ' . _BKOFORMIDABLE_MAILTO_[$i];
 		}
-		return wp_mail( $to, $subject, $message, $headers, [] );
+		return wp_mail( $to, $subject, $body, $headers, [] );
 	}
 	return false;
 }
